@@ -1,9 +1,13 @@
-import Model3D from "./components/model3D";
-
+//import Model3D from "./components/model3D";
+import {Rose} from "./components"
+import Titulo from "./components/title"
+import Contacto from "./components/Contacto";
 function App() {
   return (
     <>
-      <Model3D />
+      <Titulo />
+      <Rose />
+      <Contacto />
     </>
   );
 }
