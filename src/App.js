@@ -2,11 +2,21 @@
 import { Rose } from "./components";
 import Contacto from "./components/Contacto";
 import Navbar from "./components/Navbar/Navbar";
+import Snowfall from "react-snowfall";
+import ReactDOM from "react-dom";
 
 function App() {
   return (
     <>
       <Navbar />
+      <Snowfall
+        style={{
+          zIndex: "-1",
+        }}
+        color="red"
+        snowflakeCount={90}
+        radius={[0.5, 0.5]}
+      />
       <Rose />
       <Contacto />
       <div id="container"></div>
