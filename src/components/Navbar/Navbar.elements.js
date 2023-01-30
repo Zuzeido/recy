@@ -63,7 +63,8 @@ export const Menu = styled.ul`
 
 export const MenuItem = styled.li`
   height: 100%;
-  padding: 1.5rem @media screen and (max-width: 960px) {
+
+  @media screen and (max-width: 960px) {
     width: 100%;
     height: 70px;
     display: flex;
@@ -78,7 +79,7 @@ export const MenuItemLink = styled.a`
   align-items: center;
   height: 100%;
   padding: 0.5rem 2.5rem;
-  color: white;
+  color: #64b2ff;
   font-family: sans-serif;
   font-size: 1rem;
   font-weight: 300;
@@ -87,12 +88,12 @@ export const MenuItemLink = styled.a`
 
   &:hover {
     color: #fff;
-
+    background-color: #e0792a;
     transition: 0.5s all ease;
 
     div {
       svg {
-        fill: #23394d;
+        fill: black;
       }
     }
   }
