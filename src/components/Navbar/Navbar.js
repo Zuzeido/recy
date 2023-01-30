@@ -35,14 +35,10 @@ const Navbar = () => {
                 <div>Inicio</div>
               </MenuItemLink>
             </MenuItem>
+
             <MenuItem>
               <MenuItemLink onClick={() => setShowMobileMenu(!showMobileMenu)}>
-                <div>Tienda</div>
-              </MenuItemLink>
-            </MenuItem>
-            <MenuItem>
-              <MenuItemLink onClick={() => setShowMobileMenu(!showMobileMenu)}>
-                <div>Galería</div>
+                <div>Media</div>
               </MenuItemLink>
             </MenuItem>
             <MenuItem>
