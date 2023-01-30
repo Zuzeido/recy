@@ -87,7 +87,7 @@ export const MenuItemLink = styled.a`
   color: white;
   @import url("https://fonts.googleapis.com/css2?family=Kanit&family=Righteous&display=swap");
   font-family: "Helvetica", cursive;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 300;
   cursor: pointer;
   transition: 0.5s all ease;

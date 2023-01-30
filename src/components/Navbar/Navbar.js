@@ -32,10 +32,20 @@ const Navbar = () => {
           <Menu open={showMobileMenu}>
             <MenuItem>
               <MenuItemLink onClick={() => setShowMobileMenu(!showMobileMenu)}>
-                <div>Inicio</div>
+                <div>Home</div>
               </MenuItemLink>
             </MenuItem>
 
+            <MenuItem>
+              <MenuItemLink onClick={() => setShowMobileMenu(!showMobileMenu)}>
+                <div>Music</div>
+              </MenuItemLink>
+            </MenuItem>
+            <MenuItem>
+              <MenuItemLink onClick={() => setShowMobileMenu(!showMobileMenu)}>
+                <div>Video</div>
+              </MenuItemLink>
+            </MenuItem>
             <MenuItem>
               <MenuItemLink onClick={() => setShowMobileMenu(!showMobileMenu)}>
                 <div>Media</div>
@@ -43,7 +53,7 @@ const Navbar = () => {
             </MenuItem>
             <MenuItem>
               <MenuItemLink onClick={() => setShowMobileMenu(!showMobileMenu)}>
-                <div>Contacto</div>
+                <div>Contact</div>
               </MenuItemLink>
             </MenuItem>
           </Menu>
