@@ -3,7 +3,8 @@ import styled from "styled-components";
 export const Container = styled.div`
   width: 100%;
   height: 70px;
-  background-color: black; ;
+  background-color: black;
+  opacity: 0.7;
 `;
 
 export const Wrapper = styled.div`
