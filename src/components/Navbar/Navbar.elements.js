@@ -36,6 +36,7 @@ export const LogoContainer = styled.div`
   }
 
   svg {
+    padding: 1rem;
     fill: white;
     margin-right: 0.5rem;
   }
@@ -63,8 +64,12 @@ export const Menu = styled.ul`
 
 export const MenuItem = styled.li`
   height: 100%;
-
+  @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+  font-family: "Righteous", cursive;
   @media screen and (max-width: 960px) {
+    @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+    font-family: "Righteous", cursive;
+    font-size: 12px;
     width: 100%;
     height: 70px;
     display: flex;
@@ -79,16 +84,17 @@ export const MenuItemLink = styled.a`
   align-items: center;
   height: 100%;
   padding: 0.5rem 2.5rem;
-  color: #64b2ff;
-  font-family: sans-serif;
-  font-size: 1rem;
+  color: white;
+  @import url("https://fonts.googleapis.com/css2?family=Kanit&family=Righteous&display=swap");
+  font-family: "Righteous", cursive;
+  font-size: 2rem;
   font-weight: 300;
   cursor: pointer;
   transition: 0.5s all ease;
 
   &:hover {
     color: #fff;
-    background-color: #e0792a;
+    background-color: black;
     transition: 0.5s all ease;
 
     div {
@@ -166,6 +172,7 @@ export const MobileIcon = styled.div`
     display: flex;
     align-items: center;
     cursor: pointer;
+    padding: 1rem;
 
     svg {
       fill: white;
