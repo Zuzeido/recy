@@ -1,13 +1,15 @@
 //import Model3D from "./components/model3D";
-import {Rose} from "./components"
-import Titulo from "./components/title"
+import { Rose } from "./components";
 import Contacto from "./components/Contacto";
+import Navbar from "./components/Navbar/Navbar";
+
 function App() {
   return (
     <>
-      <Titulo />
+      <Navbar />
       <Rose />
       <Contacto />
+      <div id="container"></div>
     </>
   );
 }
