@@ -101,8 +101,9 @@ export const MenuItemLink = styled.a`
     font-size: 2rem;
   }
   &:hover {
-    color: #fff;
-    background-color: black;
+    color: black;
+    background-color: white;
+    font-color: black;
     transition: 0.5s all ease;
 
     div {
