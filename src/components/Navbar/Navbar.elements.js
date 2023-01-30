@@ -86,14 +86,17 @@ export const MenuItemLink = styled.a`
   padding: 0.5rem 2.5rem;
   color: white;
   @import url("https://fonts.googleapis.com/css2?family=Kanit&family=Righteous&display=swap");
-  font-family: "Righteous", cursive;
+  font-family: "Helvetica", cursive;
   font-size: 1.5rem;
   font-weight: 300;
   cursor: pointer;
   transition: 0.5s all ease;
   @media screen and (max-width: 960px) {
-    @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
-    font-family: "Righteous", cursive;
+    @font-face {
+      font-family: "MyFont";
+      src: local("MyFont"),
+        url(./fonts/HelveticaNeueCyr-Medium.ttf) format("ttf");
+    }
     font-size: 2rem;
   }
   &:hover {
