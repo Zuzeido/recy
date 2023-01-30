@@ -3,7 +3,6 @@ import { Rose } from "./components";
 import Contacto from "./components/Contacto";
 import Navbar from "./components/Navbar/Navbar";
 import Snowfall from "react-snowfall";
-import ReactDOM from "react-dom";
 
 function App() {
   return (

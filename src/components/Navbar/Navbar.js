@@ -10,8 +10,6 @@ import {
 } from "./Navbar.elements";
 import { FaBars, FaTimes } from "react-icons/fa";
 
-import { SiZeromq } from "react-icons/si";
-
 import { IconContext } from "react-icons";
 import LogoRecy from "../Navbar/LogoRecy.png";
 
