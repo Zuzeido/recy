@@ -13,6 +13,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import { SiZeromq } from "react-icons/si";
 
 import { IconContext } from "react-icons";
+import LogoRecy from "../Navbar/LogoRecy.png";
 
 const Navbar = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
@@ -22,7 +23,7 @@ const Navbar = () => {
       <Wrapper>
         <IconContext.Provider value={{ style: { fontSize: "2em" } }}>
           <LogoContainer>
-            <SiZeromq />
+            <img style={{ width: 80, height: 80 }} src={LogoRecy} alt="Logo" />;
           </LogoContainer>
 
           <MobileIcon onClick={() => setShowMobileMenu(!showMobileMenu)}>
