@@ -9,7 +9,7 @@ import Video from './components/video'
 function App() {
   return (
     <>
-          <Snowfall
+        <Snowfall
         style={{
           zIndex: "-1",
         }}
@@ -18,7 +18,6 @@ function App() {
         radius={[0.5, 0.5]}
       />
       <Navbar />
-
       <Rose />
       <Portada />
       <Video />
