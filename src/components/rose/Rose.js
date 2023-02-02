@@ -17,7 +17,7 @@ const Template = () => {
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(60, width / height, 0.1, 100);
     scene.add(camera);
-    camera.position.set(50, 7, 7);
+    camera.position.set(55, 7, 7);
     camera.lookAt(new THREE.Vector3());
     const renderer = new THREE.WebGLRenderer();
     renderer.setSize(width, height);
@@ -26,7 +26,7 @@ const Template = () => {
     //OrbitControls
     const orbitControls = new OrbitControls(camera, renderer.domElement);
     orbitControls.enableZoom = false;
-    orbitControls.enableDamping = true;
+    orbitControls.enableDamping = false;
 
     //Resize canvas
     const resize = () => {
@@ -40,7 +40,7 @@ const Template = () => {
     const rosa = new THREE.Group();
     const glftLoader = new GLTFLoader();
     glftLoader.load("./models/untitled.gltf", (gltf) => {
-      gltf.scene.scale.set(8, 8, 8);
+      gltf.scene.scale.set(10, 10, 10);
       scene.add(gltf.scene);
       rosa.position.y = -1;
       scene.add(rosa);
@@ -63,12 +63,6 @@ const Template = () => {
     pointLight.position.set(6, 6, 6);
     scene.add(pointLight);
 
-    /* cube
-    const cube = new THREE.Mesh(
-      new THREE.BoxBufferGeometry(1, 1, 1),
-      new THREE.MeshBasicMaterial()
-    );
-    scene.add(cube); */
 
     return () => {
       window.removeEventListener("resize", resize);
@@ -78,7 +72,7 @@ const Template = () => {
 
   return (
     <div
-      className="Contenedor3D"
+      
       ref={mountRef}
       style={{ width: "100%", height: "60vh" }}
     ></div>
