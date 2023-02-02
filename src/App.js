@@ -4,13 +4,12 @@ import Contacto from "./components/Contacto";
 import Navbar from "./components/Navbar/Navbar";
 import Snowfall from "react-snowfall";
 import Portada from './components/portada'
-import {Video} from './components/video' 
+import Video from './components/video' 
 
 function App() {
   return (
     <>
-      <Navbar />
-      <Snowfall
+          <Snowfall
         style={{
           zIndex: "-1",
         }}
@@ -18,10 +17,13 @@ function App() {
         snowflakeCount={90}
         radius={[0.5, 0.5]}
       />
+      <Navbar />
+
       <Rose />
       <Portada />
+      <Video />
       <Contacto />
-      <div id="container"></div>
+      
     </>
   );
 }

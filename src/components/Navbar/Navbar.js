@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
 import {
   Container,
   LogoContainer,
@@ -12,11 +14,13 @@ import { FaBars, FaTimes } from "react-icons/fa";
 
 import { IconContext } from "react-icons";
 import LogoRecy from "../Navbar/LogoRecy.png";
+import Galeria from "../galeria"
 
 const Navbar = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
 
   return (
+    <Router>
     <Container>
       <Wrapper>
         <IconContext.Provider value={{ style: { fontSize: "2em" } }}>
@@ -28,13 +32,13 @@ const Navbar = () => {
             {showMobileMenu ? <FaTimes /> : <FaBars />}
           </MobileIcon>
 
-          <Menu open={showMobileMenu}>
+          
+            <Menu open={showMobileMenu}>
             <MenuItem>
-              <MenuItemLink onClick={() => setShowMobileMenu(!showMobileMenu)}>
+              <MenuItemLink component={Galeria} to="/galeria" >
                 <div>Home</div>
               </MenuItemLink>
             </MenuItem>
-
             <MenuItem>
               <MenuItemLink onClick={() => setShowMobileMenu(!showMobileMenu)}>
                 <div>Music</div>
@@ -59,6 +63,7 @@ const Navbar = () => {
         </IconContext.Provider>
       </Wrapper>
     </Container>
+    </Router>
   );
 };
 

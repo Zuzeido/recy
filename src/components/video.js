@@ -1,9 +1,21 @@
 import React from 'react'
+import YouTube, { YouTubeProps } from 'react-youtube';
+
 
 function video() {
-  return (
-    <div>video</div>
-  )
-}
-
+    const onPlayerReady: YouTubeProps['onReady'] = (event) => {
+        // access to player in all event handlers via event.target
+        event.target.pauseVideo();
+      }
+    
+      const opts: YouTubeProps['opts'] = {
+        height: '300',
+        width: '520',
+        playerVars: {
+          autoplay: 1,
+        },
+      };
+    
+      return <YouTube videoId="V4AAOJfnVY0" opts={opts} onReady={onPlayerReady} />;
+    }
 export default video
