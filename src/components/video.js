@@ -10,7 +10,7 @@ function video() {
     
       const opts: YouTubeProps['opts'] = {
         height: '300',
-        width: '520',
+        width: '95%',
         playerVars: {
           autoplay: 1,
         },
