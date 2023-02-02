@@ -80,7 +80,7 @@ const Template = () => {
     <div
       className="Contenedor3D"
       ref={mountRef}
-      style={{ width: "100%", height: "100vh" }}
+      style={{ width: "100%", height: "80vh" }}
     ></div>
   );
 };
