@@ -17,7 +17,7 @@ const Template = () => {
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(60, width / height, 0.1, 100);
     scene.add(camera);
-    camera.position.set(55, 7, 7);
+    camera.position.set(55, 35, 7);
     camera.lookAt(new THREE.Vector3());
     const renderer = new THREE.WebGLRenderer();
     renderer.setSize(width, height);
@@ -27,6 +27,8 @@ const Template = () => {
     const orbitControls = new OrbitControls(camera, renderer.domElement);
     orbitControls.enableZoom = false;
     orbitControls.enableDamping = false;
+    orbitControls.autoRotate = true;
+    orbitControls.autoRotateSpeed= 6;
 
     //Resize canvas
     const resize = () => {
@@ -60,7 +62,7 @@ const Template = () => {
     scene.add(ambientalLight);
 
     const pointLight = new THREE.PointLight(0xffffff, 1);
-    pointLight.position.set(6, 6, 6);
+    pointLight.position.set(6, 6, 56);
     scene.add(pointLight);
 
 
