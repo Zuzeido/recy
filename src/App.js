@@ -19,8 +19,12 @@ function App() {
       />
       <Navbar />
       <Rose />
-      <Portada />
-      <Video />
+      <Video 
+              style={{
+                "display": "flex",
+                "flex-wrap": "nowrap",
+                "justify-content": "center",
+              }}/>
       <Contacto />
       
     </>
