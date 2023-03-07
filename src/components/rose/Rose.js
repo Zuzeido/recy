@@ -28,7 +28,7 @@ const Template = () => {
     orbitControls.enableZoom = false;
     orbitControls.enableDamping = false;
     orbitControls.autoRotate = true;
-    orbitControls.autoRotateSpeed= 6;
+    orbitControls.autoRotateSpeed= 10;
 
     //Resize canvas
     const resize = () => {
@@ -62,7 +62,7 @@ const Template = () => {
     scene.add(ambientalLight);
 
     const pointLight = new THREE.PointLight(0xffffff, 1);
-    pointLight.position.set(6, 6, 56);
+    pointLight.position.set(56, 6, 56);
     scene.add(pointLight);
 
 
