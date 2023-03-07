@@ -9,6 +9,7 @@ function video() {
       }
     
       const opts: YouTubeProps['opts'] = {
+
         height: '300',
         width: '95%',
         playerVars: {
@@ -16,6 +17,6 @@ function video() {
         },
       };
     
-      return <YouTube videoId="V4AAOJfnVY0" opts={opts} onReady={onPlayerReady} />;
+      return <YouTube videoId="V4AAOJfnVY0" opts={opts} onReady={onPlayerReady} className="video" style={{"display": "flex","flex-wrap": "nowrap","justify-content": "center"}}/>;
     }
 export default video
