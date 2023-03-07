@@ -19,12 +19,7 @@ function App() {
       />
       <Navbar />
       <Rose />
-      <Video 
-              style={{
-                "display": "flex",
-                "flex-wrap": "nowrap",
-                "justify-content": "center",
-              }}/>
+      <Video />
       <Contacto />
       
     </>

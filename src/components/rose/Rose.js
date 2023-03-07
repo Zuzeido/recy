@@ -74,7 +74,7 @@ const Template = () => {
     <div
       
       ref={mountRef}
-      style={{ width: "100%", height: "60vh" }}
+      style={{ "margin-top": "5rem", width: "100%", height: "60vh" }}
     ></div>
   );
 };
