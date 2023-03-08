@@ -13,7 +13,7 @@ function App() {
         snowflakeCount={90}
         radius={[0.5, 0.5]}
       />
-      <Navbar />
+      <Navbar style={{"z-index": "9999"}}/>
       
     </>
   );
