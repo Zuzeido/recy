@@ -2,7 +2,15 @@ import React from 'react'
 
 function Music() {
   return (
-    <div style={{color: "white"}}>Music</div>
+    <h1 style={{
+      color: "white", 
+      marginTop: "3rem", 
+      display: "flex",
+      "flex-wrap": "nowrap",
+      "justify-content": "center" 
+      }}>
+          Musica
+      </h1>
   )
 }
 
