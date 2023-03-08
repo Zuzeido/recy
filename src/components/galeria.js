@@ -7,6 +7,10 @@ import Img3 from "./img/3.JPG"
 import Img4 from "./img/4.JPG"
 import Img5 from "./img/5.JPG"
 import Img6 from "./img/6.JPG"
+import Img7 from "./img/7.JPG"
+import Img8 from "./img/8.JPG"
+import Img9 from "./img/9.JPG"
+import Img10 from "./img/10.JPG"
 
 const Galeria = () => {
   let data = [
@@ -33,6 +37,22 @@ const Galeria = () => {
     {
       id:6,
       imgSrc: Img6
+    },
+    {
+      id:7,
+      imgSrc: Img7
+    },
+    {
+      id:8,
+      imgSrc: Img8
+    },
+    {
+      id:9,
+      imgSrc: Img9
+    },
+    {
+      id:10,
+      imgSrc: Img10
     }
   ]
   const [model, setModel] = useState(false)
