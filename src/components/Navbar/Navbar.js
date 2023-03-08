@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
 
 import {
   Container,
@@ -14,12 +14,21 @@ import { FaBars, FaTimes } from "react-icons/fa";
 
 import { IconContext } from "react-icons";
 import LogoRecy from "../Navbar/LogoRecy.png";
+
+
+
+import Contacto from "../Contacto"
+import Inicio from "../Inicio"
+import Music from "../Music"
+import Video from "../video"
 import Galeria from "../galeria"
+
 
 const Navbar = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
 
   return (
+
     <Router>
     <Container>
       <Wrapper>
@@ -31,39 +40,50 @@ const Navbar = () => {
           <MobileIcon onClick={() => setShowMobileMenu(!showMobileMenu)}>
             {showMobileMenu ? <FaTimes /> : <FaBars />}
           </MobileIcon>
-
-          
-            <Menu open={showMobileMenu}>
+     
+            <Menu open={showMobileMenu}> 
             <MenuItem>
-              <MenuItemLink component={Galeria} to="/galeria" >
-                <div>Home</div>
+              <MenuItemLink onClick={() => setShowMobileMenu(!showMobileMenu)}>
+                <div><Link style={{color: "white", textDecoration: "none"}} to="/">Home</Link></div>
+              </MenuItemLink>
+            </MenuItem>
+ 
+            <MenuItem>
+              <MenuItemLink onClick={() => setShowMobileMenu(!showMobileMenu)}>
+                <div><Link style={{color: "white", textDecoration: "none"}} to="/music">Music</Link></div>
               </MenuItemLink>
             </MenuItem>
             <MenuItem>
               <MenuItemLink onClick={() => setShowMobileMenu(!showMobileMenu)}>
-                <div>Music</div>
+                <div>
+                  <Link style={{color: "white", textDecoration: "none"}} to="/video">Video</Link>
+                  </div>
               </MenuItemLink>
             </MenuItem>
             <MenuItem>
               <MenuItemLink onClick={() => setShowMobileMenu(!showMobileMenu)}>
-                <div>Video</div>
+                <div><Link style={{color: "white", textDecoration: "none"}} to="/media">Media</Link></div>
               </MenuItemLink>
             </MenuItem>
             <MenuItem>
               <MenuItemLink onClick={() => setShowMobileMenu(!showMobileMenu)}>
-                <div>Media</div>
-              </MenuItemLink>
-            </MenuItem>
-            <MenuItem>
-              <MenuItemLink onClick={() => setShowMobileMenu(!showMobileMenu)}>
-                <div>Contact</div>
+                <div><Link style={{color: "white", textDecoration: "none"}} to="/contact">Contact</Link></div>
               </MenuItemLink>
             </MenuItem>
           </Menu>
+
         </IconContext.Provider>
       </Wrapper>
     </Container>
+    <Routes>
+    <Route  path="/"  element={<Inicio />} />
+    <Route  path="/music"  element={<Music />} />
+    <Route  path="/video"  element={<Video />} />
+    <Route  path="/media"  element={<Galeria />} />
+    <Route  path="/contact"  element={<Contacto />} />
+    </Routes>
     </Router>
+
   );
 };
 

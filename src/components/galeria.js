@@ -1,11 +1,6 @@
 import React from 'react'
-import { Gallery } from "react-grid-gallery";
-
-
-function galeria() {
-  return (
-    <div>galeria</div>
-  )
+function Galeria() {
+  return <h1 style={{color: "white"}}>Esta es una página estática.</h1>;
 }
 
-export default galeria
+export default Galeria

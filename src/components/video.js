@@ -9,14 +9,13 @@ function video() {
       }
     
       const opts: YouTubeProps['opts'] = {
-
-        height: '300',
+        height: '700',
         width: '95%',
         playerVars: {
           autoplay: 1,
         },
       };
     
-      return <YouTube videoId="V4AAOJfnVY0" opts={opts} onReady={onPlayerReady} className="video" style={{"display": "flex","flex-wrap": "nowrap","justify-content": "center"}}/>;
+      return <YouTube videoId="V4AAOJfnVY0" opts={opts} onReady={onPlayerReady} className="video" style={{"display": "flex","flex-wrap": "nowrap","justify-content": "center", marginTop: "3rem"}}/>;
     }
 export default video

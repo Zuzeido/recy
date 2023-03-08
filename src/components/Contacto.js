@@ -1,7 +1,7 @@
 import React from "react";
 function Contacto() {
     return (
-        <h1>Contacto</h1>
+        <h1 style={{color: "white"}}>Contacto</h1>
     )   
 }
 

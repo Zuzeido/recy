@@ -1,1 +1,6 @@
 export {default as Rose} from "./rose/Rose"
+export {default as Galeria} from "./galeria"
+export {default as Contacto} from "./Contacto"
+export {default as Inicio} from "./Inicio"
+export {default as Music} from "./Music"
+export {default as Video} from "./video"
