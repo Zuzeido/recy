@@ -9,14 +9,18 @@
     margin-top: 3rem;
 }
 
+
 .gallery .pics {
     -webkit-transition: all 350ms ease;
     transition: all 350ms ease;
     cursor: pointer;
     margin-bottom: 12px;
+    filter: grayscale(100%);
+
 }
 .gallery .pics:hover{
-    filter: opacity(.8);
+    filter:  grayscale(0%);
+
 }
 @media (max-width: 991px){
     .gallery{
