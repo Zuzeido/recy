@@ -67,9 +67,15 @@ const Navbar = () => {
             </MenuItem>
             <MenuItem>
               <MenuItemLink onClick={() => setShowMobileMenu(!showMobileMenu)}>
+                <div><Link style={{color: "white", textDecoration: "none"}} to="/shop">Shop</Link></div>
+              </MenuItemLink>
+            </MenuItem>
+            <MenuItem>
+              <MenuItemLink onClick={() => setShowMobileMenu(!showMobileMenu)}>
                 <div><Link style={{color: "white", textDecoration: "none"}} to="/contact">Contact</Link></div>
               </MenuItemLink>
             </MenuItem>
+
           </Menu>
 
         </IconContext.Provider>

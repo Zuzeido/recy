@@ -26,6 +26,7 @@ export default Productos */
 
 
 
+import { style } from '@mui/system';
 import React, { useEffect, useState } from 'react'
 import "./products.css"
 const Index = () => {
@@ -52,6 +53,7 @@ const Index = () => {
                                     <div className="userName">{curElem.name}</div>
                                     <div className="userUrl">{curElem.id}</div>
                                     <div className="price">{curElem.price}€</div>
+                                    <div className='stock' style={{color:  curElem.stock_status === "instock" ? "green" : "red"}}>{curElem.stock_status == 'outofstock' ?  'Sin Stock' : 'En Stock'}</div>
                                     <button className="seeMore">Ver mas</button>
                                 </div>
 
