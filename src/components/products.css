@@ -30,6 +30,7 @@
 	max-height: 370px;
 	width: 100%;
     margin-bottom: 10%;
+    display: contents;
 }
 
 .container .card_item img {
@@ -118,6 +119,12 @@
         overflow: hidden;
         text-overflow: ellipsis;
     }
-
+    .container .card_item img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+        align-items: center;
+        transition: transform .2s;
+    }
     
   }
