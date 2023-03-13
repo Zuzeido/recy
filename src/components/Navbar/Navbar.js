@@ -22,7 +22,7 @@ import Inicio from "../Inicio"
 import Music from "../Music"
 import Video from "../video"
 import Galeria from "../galeria"
-
+import Productos from "../Productos"
 
 const Navbar = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
@@ -81,6 +81,7 @@ const Navbar = () => {
     <Route  path="/video"  element={<Video />} />
     <Route  path="/media"  element={<Galeria />} />
     <Route  path="/contact"  element={<Contacto />} />
+    <Route  path="/shop"  element={<Productos />} />
     </Routes>
     </Router>
 

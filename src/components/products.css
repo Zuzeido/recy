@@ -1,0 +1,121 @@
+
+.container {
+   
+	width: 100%;
+	flex-wrap: wrap;
+	display: flex;
+    background: transparent;
+}
+
+.card_item {
+    margin: 1rem;
+	padding: 15px 30px;
+	width: 24%;
+	text-align: center;
+    border: solid 1px white;
+}
+
+.container .card_item:hover {
+	transform: scale(1.02);
+	transition: transform .3s;
+	cursor: pointer;
+}
+
+.container .card_inner {
+	background: rgba(153, 92, 92, 0);
+	border-radius: 10px;
+	padding: 35px 20px ;
+	min-width: 225px;
+	min-height: 315px;
+	max-height: 370px;
+	width: 100%;
+    margin-bottom: 10%;
+}
+
+.container .card_item img {
+	width: 60%;
+	height: auto;
+	margin-bottom: 10px;
+	align-items: center;
+	transition: transform .2s;
+}
+
+.container .card_item .userName {
+	color: white;
+	font-weight: 600;
+	font-size: 20px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.container .card_item .price {
+	color: white;
+	font-weight: 600;
+	font-size: 15px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.container .card_item .userUrl {
+	font-size: 12px;
+	font-weight: 100;
+	margin: 5px 0 10px;
+	word-wrap: break-word;
+	color: #888B9E;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.container .card_item .gitDetail {
+	font-size: 14px;
+	line-height: 24px;
+	color: #7b8ca0;
+	display: flex;
+	flex-direction: column;
+}
+
+.detail-box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.detail-box span {
+	margin: 2px;
+	padding: 2px 10px;
+	/* border: 2px solid #c7e6fa; */
+	background-color: #f0ebfa;
+	border-radius: 50px;
+	font-size: 10px;
+	font-weight: 600;
+	color: #788697;
+}
+
+.seeMore {
+	margin: 10px auto;
+	width: 100px;
+	height: 35px;
+	background: hsla(245, 44%, 65%, 0);
+	color: #fff;
+	border: solid 1px white;
+	border-radius: 10px;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 425px) {
+    .container .card_inner {
+        display: contents;
+    }
+    .container {
+        margin-top: 2rem;
+    }
+    .container .card_item .userName {
+        color: white;
+        font-weight: 600;
+        font-size: 12px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+  }
